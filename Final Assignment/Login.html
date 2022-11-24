@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login | Sign in</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login">
+                <div class="image">
+                    <img src="Pictures/Login_Model.jpg">
+                </div>
+                <div class="detail">
+                    <h1>Sign In</h1>
+                    <ul>
+                        <li><a  class="button" href=""><img src="Pictures/google.png" alt="google"></a></li>
+                        <li><a  class="button" href=""><img src="Pictures/facebook.png" alt="facebook"></a></li>
+                        <li><a  class="button" href=""><img src="Pictures/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                    <p>or use your account</p>
+                    <form>
+                        <div>
+                            <p><label for="Email"><input type="email" placeholder="123abc@gmail.com"></label></p>
+                        </div>
+                        <div>
+                            <p><label for="Password"><input type="password" placeholder="Password" id="Password"><span id="pass_error"></span></label>
+                                <span class="eye" onclick="show_pass()">
+                                    <i><img id="show" src="Pictures/eye_open.png"></i>
+                                    <i><img id="no_show" src="Pictures/eye_close.png"></i>
+                                </span></p>
+                        </div>
+                        <div>
+                            <p><a style="text-decoration: none; color:gray" href="Signup.html">Create an account</a></p>
+                        </div>
+                        <div>
+                            <p><a class="loginbtr" href="Home.html" onclick="login_successful()">Login</a></p>
+                        </div>
+                        <div>
+                            <p style="text-align: left; font-size:13px"><a style="text-decoration: none; color: gray;" href="Home.html">Go back</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function login_successful(){
+                alert("Successfully Logged In!");
+            }
+
+            function show_pass(){
+                var x = document.getElementById("Password");
+                var y = document.getElementById("show");
+                var z = document.getElementById("no_show");
+            
+                if(x.type === 'password'){
+                    x.type = "text";
+                    y.style.display = "block";
+                    z.style.display = "none";
+                } 
+                else{
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

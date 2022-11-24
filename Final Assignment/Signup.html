@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up | Register</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login">
+                <div class="image">
+                    <img src="Pictures/Login_Model.jpg">
+                </div>
+                <div class="detail">
+                    <h1>Sign Up</h1>
+                    
+                
+                    <form>
+                        <div>
+                            <p><label for="Username"><input type="text" placeholder="Username" required></label></p>
+                        </div>
+                        <div>
+                            <p><label for="Email"><input type="email" placeholder="Email" required></label></p>
+                        </div>
+                        <div>
+                            <p><label for="Password"><input type="password" placeholder="Password" id="Password" required><span id="pass_error"></span></label>
+                                <span class="eye" onclick="show_pass()">
+                                    <i><img id="show" src="Pictures/eye_open.png"></i>
+                                    <i><img id="no_show" src="Pictures/eye_close.png"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div>
+                            <p><label for="Re-Password"><input type="password" placeholder="Re-enter password" id="Re-Password" required><span id="pass_error"></span></label>
+                                <span class="eye" onclick="Reshow_pass()">
+                                    <i><img id="Re-show" src="Pictures/eye_open.png"></i>
+                                    <i><img id="Re-no_show" src="Pictures/eye_close.png"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div>
+                            <p><a class="loginbtr" href="Home.html" onclick="login_successful()">Sign Up</a></p>
+                        </div>
+                        <div>
+                            <p style="text-align: left; font-size:13px"><a style="text-decoration: none; color: gray;" href="Home.html">Go back</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function login_successful(){
+                alert("Successfully Signed Up!");
+            }
+
+            function show_pass(){
+                var x = document.getElementById("Password");
+                var y = document.getElementById("show");
+                var z = document.getElementById("no_show");
+            
+                if(x.type === 'password'){
+                    x.type = "text";
+                    y.style.display = "block";
+                    z.style.display = "none";
+                } 
+                else{
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display = "block";
+                }
+            }
+
+            function Reshow_pass(){
+                var x = document.getElementById("Re-Password");
+                var y = document.getElementById("Re-show");
+                var z = document.getElementById("Re-no_show");
+            
+                if(x.type === 'password'){
+                    x.type = "text";
+                    y.style.display = "block";
+                    z.style.display = "none";
+                } 
+                else{
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+</html>

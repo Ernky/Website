@@ -1,0 +1,377 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+@media (max-width:990px) {
+    body{margin: 10px;}
+}
+
+h1, h2, h3, p{
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+}
+
+.nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    
+    display: flex;
+    padding: 0% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    position: absolute;
+    top: 20px;
+    width: 10vw;
+}
+
+.links{
+    flex: 1;
+    text-align: right;
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.links ul li:hover{
+    opacity: 0.6;
+}
+
+.dropdown{
+    display: none;
+}
+
+.links ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.products{
+    display: flex;
+    flex-flow: column ;
+    background-image: linear-gradient(#f8ebe0 80%, white );
+    align-items: center;
+}
+
+.products h1{
+    
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.products h2{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+
+.products img{
+    width: 400px;
+    padding-bottom: 40px;
+}
+
+.products_desc{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: white;
+}
+
+.products_desc h1{
+    text-align: center;
+    color: rgb(97, 97, 97);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.products_desc p{
+    margin-top: 10px;
+    color: rgb(60, 60, 60);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product1{
+    width: 100%;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.product1_img{
+    flex-basis: 60%;
+    flex: 2;
+    background-image: linear-gradient(#f3f1f0 80%, white);
+}
+
+.product1_img img{
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.product1_desc{
+    flex-basis: 40%;
+    background: white;
+    padding: 10px;
+    flex: 1;
+}
+
+.product1_desc h1{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.product1_desc h2{
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+}
+
+.product1_desc h3{
+    font-weight: 400;
+}
+
+@media screen and (max-width:990px) {
+    .product1 {flex-wrap: wrap;}
+    .product1_img:first-child {flex-basis: 100%;}
+}
+
+.product2{
+    width: 100%;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.product2_img{
+    flex-basis: 60%;
+    flex: 2;
+    background-image: linear-gradient(#f3f1f0 80%, white);
+}
+
+.product2_img img{
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.product2_desc{
+    flex-basis: 40%;
+    background: white;
+    padding: 10px;
+    flex: 1;
+}
+
+.product2_desc h1{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.product2_desc h2{
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+}
+
+.product2_desc h3{
+    font-weight: 400;
+}
+
+@media screen and (max-width:990px) {
+    .product2 {flex-wrap: wrap;}
+    .product2_img:first-child {flex-basis: 100%;}
+}
+
+.product3{
+    width: 100%;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.product3_img{
+    flex-basis: 60%;
+    flex: 2;
+    background-image: linear-gradient(#f3f1f0 80%, white);
+}
+
+.product3_img img{
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.product3_desc{
+    flex-basis: 40%;
+    background: white;
+    padding: 10px;
+    flex: 1;
+}
+
+.product3_desc h1{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.product3_desc h2{
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+}
+
+.product3_desc h3{
+    font-weight: 400;
+}
+
+.product3_desc ul{
+    padding-top: 30px;
+}
+
+.product3_desc ul li{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+}
+
+@media screen and (max-width:990px) {
+    .product3 {flex-wrap: wrap;}
+    .product3_img:first-child {flex-basis: 100%;}
+}
+
+.product4{
+    width: 100%;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.product4_img{
+    flex-basis: 60%;
+    flex: 2;
+    background-image: linear-gradient(#f3f1f0 80%, white);
+}
+
+.product4_img img{
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.product4_desc{
+    flex-basis: 40%;
+    background: white;
+    padding: 10px;
+    flex: 1;
+}
+
+.product4_desc h1{
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.product4_desc h2{
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+}
+
+.product4_desc h3{
+    font-weight: 400;
+}
+
+.product4_desc ul{
+    padding-top: 30px;
+}
+
+.product4_desc ul li{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+}
+@media screen and (max-width:990px) {
+    .product4 {flex-wrap: wrap;}
+    .product4_img:first-child {flex-basis: 100%;}
+}
+.footer_container{
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_container ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer_container ul li a{
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+}
+
+.footer_container ul li a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer_logo img{
+    width: 10vw;
+}
+
+.footer_container2{
+    display: flex;
+    background: black;
+    flex-flow: column;
+    align-items: center;
+}
+
+.footer_container2 ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer_container2 ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.footer_container2 ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer_container2 h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 10px;
+    cursor: pointer;
+}
