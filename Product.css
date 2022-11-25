@@ -213,8 +213,8 @@ nav img{
 }
 
 @media screen and (max-width:990px) {
-    .product1 {flex-wrap: wrap;}
-    .product1_img:first-child {flex-basis: 100%;}
+    .product2 {flex-wrap: wrap;}
+    .product2_img:first-child {flex-basis: 100%;}
 }
 
 .product3{
@@ -319,8 +319,8 @@ nav img{
 }
 
 @media screen and (max-width:990px) {
-    .product3 {flex-wrap: wrap;}
-    .product3_img:first-child {flex-basis: 100%;}
+    .product4 {flex-wrap: wrap;}
+    .product4_img:first-child {flex-basis: 100%;}
 }
 
 .footer_container{

@@ -112,10 +112,10 @@ nav img{
     font-weight: 300;
     color: gray;
     padding-bottom: 5%;
-    padding-top: 10px;
-    font-size: 25px;
+    padding-top: 1vw;
+    font-size: 1.6vw;
     margin: 0 10%;
-    line-height: 30px;
+    line-height: 2vw;
 }
 
 .iframe_cont{
@@ -128,7 +128,11 @@ nav img{
 .iframe_cont iframe{
     padding-top: 3vw;
     width: 50vw;
-    height: 60vh;
+    height: 400px;
+}
+
+@media screen and (max-width:990px) {
+    .iframe_cont iframe{height: 150px;}
 }
 
 .profile1 ul{
@@ -142,8 +146,8 @@ nav img{
     font-weight: 300;
     color: gray;
     padding-bottom: 5%;
-    padding-top: 10px;
-    font-size: 25px;
+    padding-top: 1vw;
+    font-size: 1.6vw;
     margin: 0 50px;
     line-height: 30px;
 }
@@ -155,7 +159,7 @@ nav img{
 }
 
 .profile1 h3{
-    font-size: 35px;
+    font-size: 2vw;
     color: rgb(109, 109, 109);
     padding: 10px;
     margin: 0;
