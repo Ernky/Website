@@ -39,6 +39,10 @@ nav img{
     text-align: right;
 }
 
+.links ul{
+    padding: 0;
+}
+
 .links ul li{
     list-style: none;
     display: inline-block;
@@ -63,7 +67,7 @@ nav img{
     display: none;
 }
 
-.links ul li:hover.dropdown{
+.links ul li:hover .dropdown{
     display: block;
     position: absolute;
     background: white;

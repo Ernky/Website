@@ -39,6 +39,10 @@ nav img{
     text-align: right;
 }
 
+.links ul{
+    padding: 0;
+}
+
 .links ul li{
     list-style: none;
     display: inline-block;
@@ -63,7 +67,7 @@ nav img{
     display: none;
 }
 
-.links ul li:hover.dropdown{
+.links ul li:hover .dropdown{
     display: block;
     position: absolute;
     background: white;
@@ -140,6 +144,24 @@ nav img{
     .container_row img{width: 80%;}
     .container_row h3,p{text-align: center;}
 }
+
+.table_container{
+    background: #e7e5db;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+table{
+    margin-bottom: 5vw;
+}
+
+table th, td{
+    text-align: center;
+    padding: 0.7vw 2vw;
+    font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
+} 
 
 .footer_container{
     display: flex;

@@ -42,6 +42,10 @@ nav img{
     text-align: right;
 }
 
+.links ul{
+    padding: 0;
+}
+
 .links ul li{
     list-style: none;
     display: inline-block;
@@ -209,8 +213,8 @@ nav img{
 }
 
 @media screen and (max-width:990px) {
-    .product2 {flex-wrap: wrap;}
-    .product2_img:first-child {flex-basis: 100%;}
+    .product1 {flex-wrap: wrap;}
+    .product1_img:first-child {flex-basis: 100%;}
 }
 
 .product3{
@@ -313,10 +317,12 @@ nav img{
     padding: 10px;
     font-family: 'Trebuchet MS', 'Tahoma', 'Verdana', 'Arial', 'sans-serif';
 }
+
 @media screen and (max-width:990px) {
-    .product4 {flex-wrap: wrap;}
-    .product4_img:first-child {flex-basis: 100%;}
+    .product3 {flex-wrap: wrap;}
+    .product3_img:first-child {flex-basis: 100%;}
 }
+
 .footer_container{
     display: flex;
     background: white;

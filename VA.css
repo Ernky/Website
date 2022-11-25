@@ -39,6 +39,10 @@ nav img{
     text-align: right;
 }
 
+.links ul{
+    padding: 0;
+}
+
 .links ul li{
     list-style: none;
     display: inline-block;

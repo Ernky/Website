@@ -35,6 +35,10 @@ nav img{
     text-align: right;
 }
 
+.links ul{
+    padding: 0;
+}
+
 .links ul li{
     list-style: none;
     display: inline-block;
@@ -59,7 +63,7 @@ nav img{
     display: none;
 }
 
-.links ul li:hover.dropdown{
+.links ul li:hover .dropdown{
     display: block;
     position: absolute;
     background: white;
@@ -112,6 +116,19 @@ nav img{
     font-size: 25px;
     margin: 0 10%;
     line-height: 30px;
+}
+
+.iframe_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.iframe_cont iframe{
+    padding-top: 3vw;
+    width: 50vw;
+    height: 60vh;
 }
 
 .profile1 ul{
